@@ -1,0 +1,17 @@
+1. POKAZ ZADANIA
+http GET http://mytaskapi.herokuapp.com/tasks/ -a maciej:maciej
+
+2. NOWE ZADANIE
+http POST http://mytaskapi.herokuapp.com/tasks/ name="task" priority="1" -a maciej:maciej
+
+3. ZAZNACZ ZADANIE
+http PATCH http://mytaskapi.herokuapp.com/tasks/31/ status="true" -a maciej:maciej
+
+4. USUN ZADANIE
+http DELETE http://mytaskapi.herokuapp.com/tasks/31/ -a maciej:maciej
+
+5. POKAZ ZADANIA O PRIORYTECIE 2
+http GET http://mytaskapi.herokuapp.com/tasks/?priority=2 -a maciej:maciej
+
+6. POKAZ ZADANIA O STATUSIE FALSE
+http GET http://mytaskapi.herokuapp.com/tasks/?status=False -a maciej:maciej
